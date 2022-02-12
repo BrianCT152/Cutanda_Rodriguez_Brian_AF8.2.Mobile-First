@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    object-fit: cover;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 6px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    color: #E50914;
+    height: 5vh;
+   
+}
+
+
+header img {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+
+}
+
+header>img:nth-child(3) {
+    display: none;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    min-height: 5vh;
+    background-color: #141414;
+    color: #E50914;
+}
+
+nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+main {
+    display: grid;
+    margin: 3px 0;
+    background-color: #141414;
+    color: #314A76;
+
+}
+
+main div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+main p {
+    
+    font-weight: bold;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+
+main img {
+    width: 100%;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+
+h3, p {
+    color: white;
+
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #141414;
+    color: #E50914;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        min-height: 80vh;
+    }
+
+    header {
+        justify-content: space-between;
+        font-size: 1rem;
+        height: 7vh;
+    }
+
+    header>img:nth-child(3) {
+        display: block;
+        visibility: hidden;
+    }
+
+    nav a{
+        font-size: 1.2rem;
+    }
+
+    main div {
+        height: 50%;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    header {
+        justify-content: space-between;
+        font-size: 1rem;
+        height: 7vh;
+    }
+
+    header>img:nth-child(3) {
+        display: block;
+        visibility: hidden;
+    }
+
+
+    nav a {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3px 3px;
+        min-height: 75vh;
+    }
+
+    main img, p {
+        width: 50%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    main div {
+        height: 50%;
+    }
+
+
+    footer {
+        height: 5vh;
+        width: 100%;
+    }
+}
